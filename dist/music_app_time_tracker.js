@@ -22,15 +22,15 @@ function calculateTotalListeningTime(tracks) {
     const totalMinute = tracks.reduce((count, obj) => count + obj.minutes, 0);
     return totalMinute;
 }
-const tracks = [
-    { title: "Blinding Lights", minutes: 3 },
-    { title: "Levitating", minutes: 4 },
-    { title: "Peaches", minutes: 3 }
-];
-console.log(calculateTotalListeningTime(tracks));
-const tracks2 = [
-    { title: "Flowers", minutes: 3 },
-    { title: "Anti-Hero", minutes: 4 }
-];
-console.log(calculateTotalListeningTime(tracks2));
+// const tracks = [
+//     { title: "Blinding Lights", minutes: 3 },
+//     { title: "Levitating", minutes: 4 },
+//     { title: "Peaches", minutes: 3 }
+// ];
+// console.log(calculateTotalListeningTime(tracks))
+// const tracks2 = [
+//     { title: "Flowers", minutes: 3 },
+//     { title: "Anti-Hero", minutes: 4 }
+// ];
+// console.log(calculateTotalListeningTime(tracks2))
 //# sourceMappingURL=music_app_time_tracker.js.map

@@ -1,3 +1,4 @@
+"use strict";
 // Problem 5 — Esports Tournament Player Stats
 // Concepts: nested arrays, object types, reduce(), return object types, conditional logic
 // Function name must be: getPlayerStats
@@ -13,40 +14,27 @@
 // Edge Case
 // Think about what your function should do if the scores array is empty.
 // TODO: define a type for a player
-
-type Player = {
-    name: string;
-    scores: number[];
-}
-
-
-
-function getPlayerStats(player: Player): { name: string; average: number; rank: string } {
- 
+Object.defineProperty(exports, "__esModule", { value: true });
+function getPlayerStats(player) {
     // write your code here
-    const scoreTotal = player.scores.reduce((count,obj) => count + obj)
-
+    const scoreTotal = player.scores.reduce((count, obj) => count + obj);
     const average = scoreTotal / player.scores.length;
-    let rank = "Rookie"
-
-    if(average >= 80){
-        rank = "MVP"
+    let rank = "Rookie";
+    if (average >= 80) {
+        rank = "MVP";
     }
-
     return {
         name: player.name,
         average,
         rank,
-    }
-
+    };
 }
-
 // console.log(getPlayerStats({
 //     name: "Nova",
 //     scores: [90, 85, 95, 80]
 // }))
-
 // console.log(getPlayerStats({
 //     name: "Zex",
 //     scores: [60, 55, 70, 50]
 // }))
+//# sourceMappingURL=player_stats.js.map
