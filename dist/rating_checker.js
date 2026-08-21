@@ -24,12 +24,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // Correctly handle all age ranges.
 function getAgeRatingAccess(age) {
     // write your code here
-    return age > 0 && age < 7 ? "E (Everyone)" : age <= 12 ? "E10+ (Everyone 10+)" : age <= 16 ? "T (Teen)" : age >= 17 ? "M (Mature)" : "Invalid";
+    if (age <= 0) {
+        return "Invalid";
+    }
+    return age > 0 && age < 7 ? "E (Everyone)" : age <= 12 ? "E10+ (Everyone 10+)" : age <= 16 ? "T (Teen)" : "M (Mature)";
 }
-console.log(getAgeRatingAccess(5));
-console.log(getAgeRatingAccess(10));
-console.log(getAgeRatingAccess(15));
-console.log(getAgeRatingAccess(20));
-console.log(getAgeRatingAccess(-1));
-console.log(getAgeRatingAccess(0));
+// console.log(getAgeRatingAccess(5))
+// console.log(getAgeRatingAccess(10))
+// console.log(getAgeRatingAccess(15))
+// console.log(getAgeRatingAccess(20))
+// console.log(getAgeRatingAccess(-1))
+// console.log(getAgeRatingAccess(0))
 //# sourceMappingURL=rating_checker.js.map
