@@ -27,14 +27,14 @@ function getSignalStatus(strength) {
     }
     return strength >= 0 && strength <= 20 ? "Weak" : strength <= 50 ? "Fair" : strength <= 80 ? "Good" : "Excellent";
 }
-console.log(getSignalStatus(10));
-console.log(getSignalStatus(35));
-console.log(getSignalStatus(65));
-console.log(getSignalStatus(95));
-console.log(getSignalStatus(20));
-console.log(getSignalStatus(21));
-console.log(getSignalStatus(80));
-console.log(getSignalStatus(81));
-console.log(getSignalStatus(-12));
-console.log(getSignalStatus(200));
+// console.log(getSignalStatus(10));
+// console.log(getSignalStatus(35));
+// console.log(getSignalStatus(65));
+// console.log(getSignalStatus(95));
+// console.log(getSignalStatus(20));
+// console.log(getSignalStatus(21));
+// console.log(getSignalStatus(80));
+// console.log(getSignalStatus(81));
+// console.log(getSignalStatus(-12));
+// console.log(getSignalStatus(200));
 //# sourceMappingURL=wifi_signal_status.js.map
